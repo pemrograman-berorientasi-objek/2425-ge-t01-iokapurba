@@ -8,11 +8,15 @@ public class Account {
 
         private final String owner;
         private final String accountname;
-        private Double balance = 0.0;
+        private Double balance = 24.0;
 
         public Account(String Owner, String acc){
             this.owner = Owner;
             this.accountname = acc;
+        }
+
+        public double getbalance(){
+            return this.balance;
         }
 
         @Override
