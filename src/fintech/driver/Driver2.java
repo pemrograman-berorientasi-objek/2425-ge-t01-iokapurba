@@ -15,18 +15,13 @@ public class Driver2 {
         String command;
         String owner;
         String acc_name;
-        command = scanner.nextLine();
-        owner = scanner.nextLine();
-        acc_name = scanner.nextLine();
-        Account account = new Account(owner, acc_name);
-       
-
         
             command = scanner.nextLine();
             if(command.equals("create-account")) {
-                command = scanner.nextLine();
                 owner = scanner.nextLine();
                 acc_name = scanner.nextLine();
+                Account account = new Account(owner, acc_name);
+
                 System.out.println(account.toString());
             } 
             command = scanner.nextLine();
