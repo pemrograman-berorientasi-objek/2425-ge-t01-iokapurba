@@ -22,8 +22,6 @@ public class Driver2 {
        
 
         
-        int y = 0;
-        while(y == 0){
             command = scanner.nextLine();
             if(command.equals("create-account")) {
                 command = scanner.nextLine();
@@ -31,6 +29,7 @@ public class Driver2 {
                 acc_name = scanner.nextLine();
                 System.out.println(account.toString());
             } 
+            command = scanner.nextLine();
             if (command.equals("create-transaction")){
                 String acc_name1 = scanner.nextLine();
                 Double ammount = scanner.nextDouble();
@@ -40,9 +39,5 @@ public class Driver2 {
                 Transaction transaction = new Transaction(acc_name1, ammount, posted, note);
                 System.out.println(transaction.toString());
             }
-            if(command.equals("---")){
-                y++;
-            }
-        }
     }
 }
