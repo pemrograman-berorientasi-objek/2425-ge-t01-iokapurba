@@ -16,12 +16,11 @@ public class Driver2 {
         String owner;
         String acc_name;
 
-            Account account = null;
             command = scanner.nextLine();
             if(command.equals("create-account")) {
                 owner = scanner.nextLine();
                 acc_name = scanner.nextLine();
-                account = new Account(owner, acc_name);
+                Account account = new Account(owner, acc_name);
 
                 System.out.println(account.toString());
             } 
@@ -32,7 +31,7 @@ public class Driver2 {
                 scanner.nextLine();
                 String posted = scanner.nextLine();
                 String note = scanner.nextLine();
-                Transaction transaction = new Transaction(acc_name1, ammount+account.getbalance(), posted, note);
+                Transaction transaction = new Transaction(acc_name1, ammount, posted, note);
                 System.out.println(transaction.toString());
             }
     }
