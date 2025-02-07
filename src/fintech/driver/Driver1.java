@@ -28,8 +28,6 @@ public class Driver1 {
 
         } else if (command.equals("create-transaction")){
             
-
-
         }
     }
 }
