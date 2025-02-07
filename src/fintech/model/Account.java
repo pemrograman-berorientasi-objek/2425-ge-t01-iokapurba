@@ -6,6 +6,17 @@ package fintech.model;
  */
 public class Account {
 
-    // class definition
+        private final String owner;
+        private final String accountname;
+        private Double balance = 0.0;
 
+        public Account(String Owner, String acc){
+            this.owner = Owner;
+            this.accountname = acc;
+        }
+
+        @Override
+        public String toString(){
+            return accountname+"|"+owner+"|"+balance;
+        }
 }

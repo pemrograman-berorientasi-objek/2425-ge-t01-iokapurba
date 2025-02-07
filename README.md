@@ -91,7 +91,7 @@ Wiro Sableng
 wirsab
 create-transaction
 wirsab
-24.0
+44.0
 2023/02/14 14:14:14
 Weekly income
 
