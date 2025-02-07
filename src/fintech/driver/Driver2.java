@@ -32,7 +32,6 @@ public class Driver2 {
                 scanner.nextLine();
                 String posted = scanner.nextLine();
                 String note = scanner.nextLine();
-                System.out.println("Saldo sebelum transaksi: " + account.getbalance());
                 Transaction transaction = new Transaction(acc_name1, ammount+account.getbalance(), posted, note);
                 System.out.println(transaction.toString());
             }
